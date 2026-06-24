@@ -1,47 +1,55 @@
 export default function About() {
   return (
     <main className="about">
-      <h1>About Me &amp; Sector 71</h1>
-
+      <h1>About Me</h1>
       <div className="about-grid">
-        <aside className="note">
-          <h2>ABOUT ME</h2>
-          <ul>
-            <li>Navya Kaur</li>
-            <li>Chief of Staff</li>
-            <li>Based in Boston</li>
-            <li>Loves knitting</li>
-            <li>Always curious</li>
-          </ul>
-          <p className="building">And founder of Sector 71!</p>
-        </aside>
-
-        <figure className="about-photo">
-          <div className="stars">
-            <img src="/assets/gold-star.png" alt="" />
-            <img src="/assets/gold-star.png" alt="" />
-            <img src="/assets/gold-star.png" alt="" />
-          </div>
-          <img className="portrait" src="/assets/profile-picture.jpg" alt="Portrait of Navya Kaur" />
-          <figcaption className="caption">stay tuned for more!</figcaption>
-        </figure>
-
+        <div className="about-photo-stack">
+          <aside className="note">
+            <div className="paperclip" aria-hidden="true">
+              <svg width="32" height="72" viewBox="0 0 32 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16 4 C8 4 4 10 4 16 L4 52 C4 62 10 68 16 68 C22 68 28 62 28 52 L28 20 C28 14 24 10 18 10 C12 10 10 14 10 20 L10 50 C10 54 12 56 16 56 C20 56 22 54 22 50 L22 22"
+                  stroke="#8a8a8a"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  fill="none"
+                />
+              </svg>
+            </div>
+            <h2>Navya Kaur</h2>
+            <ul>
+              <li>based in Boston</li>
+              <li>journaling since 7th grade</li>
+              <li>knitter and crocheter</li>
+              <li>ice cream lover (but not after 9 p.m.)</li>
+              <li>always curious</li>
+            </ul>
+            <p className="building">And founder of Sector 71!</p>
+          </aside>
+          <figure className="about-photo">
+            <img className="portrait" src="/assets/profile-picture.jpg" alt="Portrait of Navya Kaur" />
+          </figure>
+        </div>
         <div className="about-body">
+          <p>Dear reader,</p>
           <p>
-            Navya Kaur is the Chief of Staff to the General Counsel at
-            compliance-startup Ethena. Before finding her home in early-stage
-            tech, she worked in government and consulting &mdash; a winding road
-            she credits to an American Studies degree and a hearty curiosity
-            about everything. Outside of work, she designs and knits her own
-            clothes, is a published writer, and recently started her own monthly
-            mail subscription called Sector 71.
+            Those who know me know I&rsquo;ve always loved sending and receiving mail.
+            In my opinion, handwritten letters are a lost art and one of the truest
+            ways to communicate, because of the deliberation and anticipation they require.
           </p>
           <p>
-            Sector 71 is a small labor of love: every month, subscribers receive
-            a handwritten letter, a piece of original writing, and a little gift
-            chosen with care. It&rsquo;s an experiment in slowing down, making
-            things by hand, and keeping the lost art of mail alive &mdash; one
-            envelope at a time.
+            I started this mail club to reintroduce care and intimacy into how we connect.
+            In a digital world where everything is always at our fingertips, there&rsquo;s
+            something special about letting things take their time to come to you.
+          </p>
+          <p>
+            My work has been featured in Oyster River Pages and The San Franciscan,
+            but my main credentials come from my sixth grade elementary school teacher
+            who told me I was going to be a writer one day. Mr. Rivera, you got it so right.
+          </p>
+          <p>
+            Sincerely,<br />
+            Navya
           </p>
         </div>
       </div>
